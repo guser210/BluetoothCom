@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/properties_menu_cell_3_field_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Gear"
+        android:textColor="@color/black"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+        <EditText
+            android:id="@+id/properties_menu_cell_3_field_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="18dp"
+            android:hint="Field Name"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toRightOf="@id/properties_menu_cell_3_field_label"
+            app:layout_constraintBaseline_toBaselineOf="@id/properties_menu_cell_3_field_label"
+            />
+
+
+    <TextView
+        android:id="@+id/properties_menu_cell_3_delimiter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Delimiter"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+
+        app:layout_constraintTop_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        />
+    <EditText
+        android:id="@+id/properties_menu_cell_3_delimiter_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="2"
+        android:textSize="18dp"
+        android:hint=":"
+        android:inputType="text"
+        android:text=":"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/properties_menu_cell_3_delimiter_label"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toEndOf="@+id/properties_menu_cell_3_delimiter_label" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/properties_menu_cell_3_delimiter_value"
+        app:layout_constraintTop_toBottomOf="@+id/properties_menu_cell_3_field_value">
+        <!--        app:layout_constraintStart_toEndOf="@+id/properties_menu_cell_2_value"-->
+
+        <RadioButton
+            android:id="@+id/properties_menu_cell_3_option_type_value"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Value"
+            android:textSize="18dp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/properties_menu_cell_3_option_type_character"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Character"
+            android:textSize="18dp"
+
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/properties_menu_cell_3_default_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Default value"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+
+        />
+
+    <EditText
+        android:id="@+id/properties_menu_cell_3_default_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="18dp"
+        android:hint="123"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@id/properties_menu_cell_3_default_label"
+        app:layout_constraintBaseline_toBaselineOf="@id/properties_menu_cell_3_default_label"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/properties_menu_cell_3_default_label"
+        android:layout_marginTop="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

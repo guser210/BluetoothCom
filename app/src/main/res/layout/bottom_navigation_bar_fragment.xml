@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menu.BottomNavigationBarFragment"
+    android:background="#efffffff"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/bottom_menu_bar_profiles_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="Profiles"
+            android:textSize="18dp"
+            android:textColor="#FF808080"
+            app:layout_constraintEnd_toStartOf="@+id/bottom_menu_bar_new_profile_title"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />0.5""
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/bottom_menu_bar_new_profile_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="New Profile"
+            android:textSize="18dp"
+
+
+            android:textColor="#FF808080"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bottom_menu_bar_profiles_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bottom_menu_bar_profiles_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/bottom_menu_bar_new_profile_icon"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_bottom_menu_bar_profiles"
+
+            />
+
+        <ImageView
+            android:id="@+id/bottom_menu_bar_new_profile_icon"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bottom_menu_bar_profiles_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_bottom_menu_bar_new_profile" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

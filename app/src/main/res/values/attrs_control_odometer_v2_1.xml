@@ -1,0 +1,34 @@
+<resources>
+    <declare-styleable name="ControlOdometerV2_1">
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+
+        <attr name="odometerBackgroundColor" format="color"/>
+        <attr name="odometerEdgeOffset" format="integer" />
+        <attr name="odometerGraduationCircleColor" format="color"/>
+        <attr name="odometerGraduationCircleWidth" format="integer"/>
+        <attr name="odometerGraduationCircleEdgeOffset" format="integer"/>
+        <attr name="odometerGraduations" format="integer"/>
+        <attr name="odometerGraduationDegrees" format="integer"/>
+        <attr name="odometerBaseAngle" format="float"/>
+
+        <attr name="odometerFontWidth" format="dimension"/>
+        <attr name="odometerFontSize" format="dimension"/>
+        <attr name="odometerFontColor" format="color"/>
+
+        <attr name="odometerFontOffset" format="dimension"/>
+
+        <attr name="odometerScaleColorMajor" format="color"/>
+        <attr name="odometerScaleColorMinor" format="color"/>
+        <attr name="odometerScaleLengthMajor" format="dimension"/>
+        <attr name="odometerScaleLengthMinor" format="dimension"/>
+        <attr name="odometerScaleWidthMajor" format="dimension"/>
+        <attr name="odometerScaleWidthMinor" format="dimension"/>
+        <attr name="odometerGraduationRedLine" format="integer" />
+        <attr name="odometerGraduationRedLineColor" format="color"/>
+
+
+    </declare-styleable>
+</resources>

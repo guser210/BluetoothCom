@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controls.ControlOdometerV2Fragment"
+
+    >
+
+
+
+    <com.example.bluetoothcom.controls.ControlOdometerV2_1
+        android:id="@+id/control_odometer"
+        android:background="#00ffff00"
+        style="@style/Widget.Theme.BlueToothCom.MyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingBottom="40dp"
+
+        app:exampleDimension="24sp"
+        app:exampleDrawable="@android:drawable/ic_menu_add"
+        app:exampleString="Hello, ControlOdometerV2_1"
+
+        app:odometerBackgroundColor="#ff000000"
+        app:odometerEdgeOffset="20"
+        app:odometerGraduationCircleColor="#ffff0000"
+        app:odometerGraduationCircleWidth="10"
+        app:odometerGraduationCircleEdgeOffset="20"
+        app:odometerGraduations="13"
+        app:odometerGraduationDegrees="270"
+        app:odometerBaseAngle="90"
+
+        app:odometerFontWidth="1px"
+        app:odometerFontSize="24sp"
+        app:odometerFontColor="#ffffffff"
+        app:odometerFontOffset="18dp"
+
+        app:odometerScaleColorMajor="@color/white"
+        app:odometerScaleWidthMajor="4dp"
+        app:odometerScaleLengthMajor="22dp"
+
+        app:odometerScaleColorMinor="#ffffffff"
+        app:odometerScaleLengthMinor="12dp"
+        app:odometerScaleWidthMinor="2dp"
+
+        app:odometerGraduationRedLine="11"
+        app:odometerGraduationRedLineColor="#ffff0000"
+
+
+
+
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:id="@+id/control_odometer_gear"
+            android:layout_width="70dp"
+            android:layout_height="56dp"
+
+
+            android:background="@drawable/control_odometer_gear_background"
+            android:gravity="center_vertical|center_horizontal"
+
+            android:text="1"
+            android:textColor="#ff00ff00"
+            android:textSize="44dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/control_odometer_needle_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="12px"
+            android:background="#ffcccccc"
+
+            app:layout_constraintBottom_toBottomOf="@id/control_odometer_center_base"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintLeft_toLeftOf="@id/control_odometer_center_base"
+            app:layout_constraintRight_toRightOf="@id/control_odometer_center_base"
+
+            app:layout_constraintTop_toTopOf="@id/control_odometer_center_base" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:background="#ffff0000"
+
+            app:layout_constraintBottom_toBottomOf="@id/control_odometer_center_base"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintLeft_toLeftOf="@id/control_odometer_center_base"
+            app:layout_constraintRight_toRightOf="@id/control_odometer_center_base"
+
+            app:layout_constraintTop_toTopOf="@id/control_odometer_center_base" />
+
+
+        <View
+            android:id="@+id/control_odometer_center_base"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/control_odometer_center_tab_background"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:background="@drawable/control_odometer_center_tab_background"
+            android:backgroundTint="#ff000000"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</FrameLayout>
